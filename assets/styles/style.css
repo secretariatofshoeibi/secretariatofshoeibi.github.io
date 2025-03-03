@@ -1,0 +1,55 @@
+@font-face {
+    font-family: 'IranNastaliq';
+    src: url('../fonts/IranNastaliq.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'B Zar';
+    src: url('../fonts/B\ Zar.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+body {
+    background-color: #f8f9fa;
+    font-family: 'B Zar', Arial, sans-serif;
+    text-align: right, justify;
+    text-justify: inter-word;
+    direction: rtl;
+    padding: 20px;
+    display: flex;
+    
+    flex-direction: column;
+    min-height: 100vh;
+}
+h1 {
+    font-family: 'IranNastaliq', Arial, sans-serif;
+}
+p {
+    font-size: 16pt;
+}
+.container {
+    flex: 1;
+    margin-top: 10vh;
+    text-align: right;
+}
+.logo {
+    max-width: 250pt;
+    float: right;
+    display: block;
+    margin-bottom: 20pt;
+    margin-left: 20pt;
+}
+.btn-primary {
+    background-color: #002366;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+}
+footer {
+    text-align: center;
+    padding: 10px;
+    background-color: #002366;
+    color: white;
+    margin-top: 20pt;
+}
