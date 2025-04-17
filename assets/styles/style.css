@@ -3,6 +3,7 @@
     src: url('../fonts/IranNastaliq.ttf') format('truetype');
     font-weight: normal;
     font-style: normal;
+    font-display: swap;
 }
 
 @font-face {
@@ -10,47 +11,79 @@
     src: url('../fonts/B\ Zar.ttf') format('truetype');
     font-weight: normal;
     font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'B Zar Bold';
+    src: url('../fonts/B\ Zar\ Bold.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Optima 0';
+    src: url('../fonts/OPTIMA_0.TTF') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Optima';
+    src: url('../fonts/Optima\ Medium.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
 }
 
 body {
-    background-color: #f8f9fa;
-    font-family: 'B Zar', Arial, sans-serif;
-    text-align: right, justify;
-    text-justify: inter-word;
+    font-family: 'B Zar', 'B Zar Bold', 'Optima', 'Optima 0';
     direction: rtl;
-    padding: 20px;
-    display: flex;
-    
-    flex-direction: column;
-    min-height: 100vh;
+    text-align: justify;
+    background-color: #f9fafb;
 }
 
 h1 {
-    font-family: 'IranNastaliq', Arial, sans-serif;
+    font-family: 'IranNastaliq', 'Optima';
+    font-size: clamp(2rem, 5vw, 3rem);
 }
 
-p {
-    font-size: 16pt;
+h2#pa{
+    font-family: 'B Zar Bold';
 }
 
-.container {
-    flex: 1;
-    margin-top: 10vh;
-    text-align: right;
+h2#en{
+    font-family: 'Optima 0';
 }
 
-.logo {
-    max-width: 250pt;
-    float: right;
-    display: block;
-    margin-bottom: 20pt;
-    margin-left: 20pt;
+
+.social-btn {
+    transition: background-color 0.3s ease, transform 0.2s ease;
 }
 
-footer {
-    text-align: center;
-    padding: 10px;
-    background-color: #002366;
-    color: white;
-    margin-top: 20pt;
+.social-btn:hover {
+    transform: scale(1.1);
+}
+
+.english-content {
+    direction: ltr;
+    text-align: justify;
+    font-family: 'B Zar', 'Optima';
+}
+
+.section-divider {
+    border-top: 1px solid #e5e7eb;
+    margin: 2rem 0;
+}
+
+.language-section h2 {
+    font-size: clamp(1.25rem, 3vw, 1.5rem);
+    font-weight: bold;
+    margin-bottom: 1rem;
+}
+
+.header-img {
+    object-fit: contain;
 }
